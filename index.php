@@ -16,7 +16,7 @@
 				<?php get_header(); ?>
 
 				<div class="row">
-					<div class="col-md-2">
+					<div class="col-md-2 left-nav">
 
 						<?php
 						require_once 'Bootstrap_Walker_Nav_Menu.php';
