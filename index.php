@@ -11,7 +11,7 @@
     <body>
 
 		<div>
-			<div class="col-lg-2 col-md-1 col-sm-1 orange"></div>
+			<div class="col-md-2 hidden-sm hidden-xs orange"></div>
 			<div class="col-md-8">
 				<?php get_header(); ?>
 
@@ -41,9 +41,6 @@
 					</div>
 
 					<div class="col-md-8">
-
-						<a class="btn btn-primary" href="#">Hello World</a>
-
 						<?php
 //loop to get content
 						if ( have_posts() ) :
@@ -56,7 +53,7 @@
 				</div>
 				<?php wp_footer(); ?>
 			</div>
-			<div class="col-lg-2 col-md-1 col-sm-1 orange" />
+			<div class="col-md-2 hidden-sm hidden-xs orange" />
 		</div>
     </body>
 </html>
