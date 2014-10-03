@@ -19,7 +19,7 @@
 					<div class="col-md-2 left-nav">
 
 						<?php
-						require_once 'Bootstrap_Walker_Nav_Menu.php';
+						require_once 'BootStrap_Walker_Nav_Menu.php';
 						wp_nav_menu( array(
 							'menu' => 'lctd-left-menu',
 							'menu_class' => 'btn-group-vertical btn-block',

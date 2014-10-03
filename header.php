@@ -7,7 +7,7 @@
 		<nav class="navbar" role="navigation">
 			<div class="navbar-collapse collapse">
 				<?php
-				require_once 'Bootstrap_Walker_Nav_Menu.php';
+				require_once 'BootStrap_Walker_Nav_Menu.php';
 				wp_nav_menu( array(
 					'menu' => 'lctd-menu',
 					'menu_class' => 'nav navbar-nav',
