@@ -73,3 +73,12 @@ body {
     /* Margin bottom by footer height */
     margin-bottom: 60px;
 }
+
+div.left-nav .active:not(.menu-item-has-children) {
+    border-color: green;
+}
+
+div.left-nav .current-menu-item.active:not(.menu-item-has-children) {
+    border-color: green;
+    border-width: 3px;
+}
