@@ -74,11 +74,15 @@ body {
     margin-bottom: 60px;
 }
 
-div.left-nav .active:not(.menu-item-has-children) {
+div.left-nav .active:not(.menu-item-has-children),
+div.btn-toolbar .active:not(.menu-item-has-children)
+{
     border-color: green;
 }
 
-div.left-nav .current-menu-item.active:not(.menu-item-has-children) {
+div.left-nav .current-menu-item.active:not(.menu-item-has-children),
+div.btn-toolbar .current-menu-item.active:not(.menu-item-has-children)
+ {
     border-color: green;
     border-width: 3px;
 }
