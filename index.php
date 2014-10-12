@@ -33,7 +33,7 @@
 				<div class="col-md-8 col-height">
 					<?php get_header(); ?>
 					<div class="row">
-						<div class="col-md-2 left-nav">
+						<div class="col-xs-2 col-md-2 left-nav">
 							<div class="row">
 								<?php
 								require_once (trailingslashit( get_template_directory() ) . 'BootStrap_Walker_Nav_Menu.php');
@@ -47,13 +47,13 @@
 								) );
 								?>
 							</div>
-							<div class="row">
+							<div class="row text-center">
 								<b><font face="Tahoma Small Cap" size="2">Click below to<br>
 									Donate with PayPal</font></b>
 								<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
 									<input name="cmd" value="_s-xclick" type="hidden">
 									<input name="hosted_button_id" value="1289646" type="hidden">
-									<input name="submit" src="https://www.paypal.com/en_US/i/btn/btn_donateCC_LG.gif" align="bottom" border="0" type="image">
+									<input name="submit" src="https://www.paypal.com/en_US/i/btn/btn_donateCC_LG.gif" id="paypal-button" type="image" class="img-responsive">
 									<img src="/images/pixel.gif" height="1" width="1">
 								</form>
 							</div>
@@ -64,7 +64,7 @@
 							<div class="row">
 								<div class="col-md-12 text-center">
 									<a href="http://www.facebook.com/pages/Livermore-Community-Thanksgiving-Dinner/191220754276435" target="_new">
-										<img src="<?php echo get_template_directory_uri(); ?>/images/icon-Facebook.png" alt="Find Us On Facebook" height="36" width="36">
+										<img src="<?php echo get_template_directory_uri(); ?>/images/icon-Facebook.png" alt="Find Us On Facebook" id="facbook-button" class="img-responsive img-thumbnail">
 									</a>
 									<div class="clear">Find us on Facebook</div>
 								</div>
@@ -74,7 +74,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-md-10">
+						<div class="col-xs-10 col-md-10">
 							<?php
 							//loop to get content
 							if ( have_posts() ) :

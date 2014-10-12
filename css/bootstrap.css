@@ -934,7 +934,7 @@ img {
 .thumbnail a > img,
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
-  display: block;
+  /* display: block; */
   width: 100% \9;
   max-width: 100%;
   height: auto;
