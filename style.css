@@ -96,6 +96,7 @@ div.btn-toolbar .current-menu-item.active:not(.menu-item-has-children)
 #facbook-button {
     max-height: 50px;
     max-width: 50px;
+    width: 80%;
 }
 
 /* responsive text queries */
