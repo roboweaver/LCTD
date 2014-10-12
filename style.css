@@ -67,6 +67,7 @@ div.orange {
     border-bottom-color: #FF9900;
     border-bottom-width: 1px;
     border-bottom-style: solid; 
+    text-align: center;
 }
 
 body {

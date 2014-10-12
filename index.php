@@ -1,3 +1,20 @@
+<?php
+/**
+ * The main template file
+ *
+ * This is the most generic template file in a WordPress theme and one
+ * of the two required files for a theme (the other being style.css).
+ * It is used to display a page when nothing more specific matches a query,
+ * e.g., it puts together the home page when no home.php file exists.
+ *
+ * @link http://codex.wordpress.org/Template_Hierarchy
+ *
+ * @package LCTD
+ * @subpackage LCTD
+ * @since Livermore Community Thanksgiving Dinner 1.0
+ */
+
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -19,7 +36,7 @@
 						<div class="col-md-2 left-nav">
 							<div class="row">
 								<?php
-								require_once (trailingslashit( get_template_directory() ) . 'Bootstrap_Walker_Nav_Menu.php');
+								require_once (trailingslashit( get_template_directory() ) . 'BootStrap_Walker_Nav_Menu.php');
 								wp_nav_menu( array(
 									'menu' => 'lctd-left-menu',
 									'menu_class' => 'btn-group-vertical btn-block',
@@ -31,16 +48,14 @@
 								?>
 							</div>
 							<div class="row">
-								<div class="col-md-12">
-									<b><font face="Tahoma Small Cap" size="2">Click below to<br>
-										Donate with PayPal</font></b>
-									<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
-										<input name="cmd" value="_s-xclick" type="hidden">
-										<input name="hosted_button_id" value="1289646" type="hidden">
-										<input name="submit" src="https://www.paypal.com/en_US/i/btn/btn_donateCC_LG.gif" align="bottom" border="0" type="image">
-										<img src="/images/pixel.gif" height="1" width="1">
-									</form>
-								</div>
+								<b><font face="Tahoma Small Cap" size="2">Click below to<br>
+									Donate with PayPal</font></b>
+								<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+									<input name="cmd" value="_s-xclick" type="hidden">
+									<input name="hosted_button_id" value="1289646" type="hidden">
+									<input name="submit" src="https://www.paypal.com/en_US/i/btn/btn_donateCC_LG.gif" align="bottom" border="0" type="image">
+									<img src="/images/pixel.gif" height="1" width="1">
+								</form>
 							</div>
 							<div class="row">
 								<div class="col-md-12">
