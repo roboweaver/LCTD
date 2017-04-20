@@ -46,7 +46,6 @@
                                 ));
                                 ?>
                             </div>
-                            <?php get_template_part("paypal"); ?>
                             
                             <?php get_template_part("social"); ?>
 
